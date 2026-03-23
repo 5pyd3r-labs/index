@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Portfolio",
+    "url": "https://me.5pyd3r.org",
+    "description": "Personal portfolio — projects, blog, and contact.",
+    "category": "personal",
+    "deployed_on": "Cloudflare Pages",
+    "repo": "https://github.com/3rr0r-505/3rr0r-505.github.io",
+    "status": "live",
+    "tags": ["portfolio", "static", "personal"]
+  },
+  {
+    "name": "Bits to Bandwidth",
+    "url": "https://5pyd3rr.is-a.dev/Bits-to-Bandwidth/",
+    "description": "Computer Networks resource library — slides, PDFs, and textbooks.",
+    "category": "education",
+    "deployed_on": "GitHub Pages",
+    "repo": "https://github.com/3rr0r-505/Bits-to-Bandwidth",
+    "status": "live",
+    "tags": ["networking", "resources", "education"]
+  }
+]

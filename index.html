@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5pyd3r / index</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <span class="logo">5pyd3r<span class="accent">/</span>index</span>
+        <span class="tagline">all deployments. one place.</span>
+      </div>
+      <div class="meta-row">
+        <span id="total-count">— projects</span>
+        <span class="sep">·</span>
+        <span id="live-count">— live</span>
+        <span class="sep">·</span>
+        <span>owner: <a href="https://me.5pyd3r.org" target="_blank" rel="noopener">5pyd3r</a></span>
+      </div>
+      <div class="controls">
+        <input type="text" id="search" placeholder="filter by name, tag, platform..." autocomplete="off" spellcheck="false" />
+        <div class="filter-group" id="category-filters">
+          <button class="filter-btn active" data-cat="all">all</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="table-header">
+        <span class="col-name">project</span>
+        <span class="col-desc">description</span>
+        <span class="col-platform">platform</span>
+        <span class="col-tags">tags</span>
+        <span class="col-status">status</span>
+      </div>
+      <div id="project-list"></div>
+      <div id="empty-state" class="empty-state hidden">no matches found.</div>
+    </main>
+
+    <footer>
+      <span>© 2026 · <a href="https://me.5pyd3r.org" target="_blank" rel="noopener">5pyd3r.org</a></span>
+      <span class="sep">·</span>
+      <span><a href="https://github.com/3rr0r-505" target="_blank" rel="noopener">github/3rr0r-505</a></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
