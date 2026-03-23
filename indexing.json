@@ -2,6 +2,7 @@
   {
     "name": "Indexing",
     "url": "https://index.5pyd3r.org",
+    "subdomain": "index.5pyd3r.org",
     "description": "Central index of all deployments and projects under 5pyd3r.org.",
     "category": "personal",
     "deployed_on": "Cloudflare Pages",
@@ -12,6 +13,7 @@
   {
     "name": "Portfolio",
     "url": "https://me.5pyd3r.org",
+    "subdomain": "me.5pyd3r.org",
     "description": "Personal portfolio — projects, blog, and contact.",
     "category": "personal",
     "deployed_on": "Cloudflare Pages",
@@ -22,6 +24,7 @@
   {
     "name": "Knowledge Base",
     "url": "https://lib.5pyd3r.org",
+    "subdomain": "lib.5pyd3r.org",
     "description": "Structured technical resources — networking, security, and beyond.",
     "category": "education",
     "deployed_on": "Cloudflare Pages",

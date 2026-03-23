@@ -76,6 +76,7 @@
         (p.name        || '').toLowerCase().includes(query) ||
         (p.description || '').toLowerCase().includes(query) ||
         (p.deployed_on || '').toLowerCase().includes(query) ||
+        (p.subdomain   || '').toLowerCase().includes(query) ||
         (p.category    || '').toLowerCase().includes(query) ||
         (p.tags || []).some(t => t.toLowerCase().includes(query))
       );
@@ -110,6 +111,26 @@
     // status
     const statusClass = `status-${(p.status || 'unknown').toLowerCase()}`;
 
+    // subdomain — use explicit p.subdomain field, fallback to extracting from p.url
+    let subdomainDisplay = '—';
+    let subdomainHref = p.url || null;
+
+    if (p.subdomain) {
+      subdomainDisplay = p.subdomain;
+      // if subdomain doesn't have a protocol, use p.url as the href
+      subdomainHref = p.url || `https://${p.subdomain}`;
+    } else if (p.url) {
+      try {
+        subdomainDisplay = new URL(p.url).hostname;
+      } catch (_) {
+        subdomainDisplay = p.url;
+      }
+    }
+
+    const subdomainHtml = subdomainHref
+      ? `<a href="${esc(subdomainHref)}" target="_blank" rel="noopener">${esc(subdomainDisplay)}</a>`
+      : subdomainDisplay;
+
     row.innerHTML = `
       <div class="col-name">
         <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
@@ -117,6 +138,7 @@
       </div>
       <div class="col-desc">${esc(p.description || '—')}</div>
       <div class="col-platform">${esc(p.deployed_on || '—')}</div>
+      <div class="col-subdomain">${subdomainHtml}</div>
       <div class="col-tags">${tagsHtml || '<span class="tag" style="opacity:0.3">—</span>'}</div>
       <div class="col-status"><span class="status-badge ${statusClass}">${esc(p.status || '?')}</span></div>
     `;

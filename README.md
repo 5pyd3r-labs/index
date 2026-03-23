@@ -36,7 +36,7 @@ Open `indexing.json` and append an entry:
   "description": "One line. What it does, not what it is.",
   "category": "security",
   "deployed_on": "Cloudflare Pages",
-  "repo": "https://github.com/5pyd3r-labs/repo-name",
+  "repo": "https://github-or-gitlab/repo-name",
   "status": "live",
   "tags": ["tag1", "tag2"]
 }
@@ -48,6 +48,7 @@ Open `indexing.json` and append an entry:
 |---|---|---|
 | `name` | ✅ | Display name of the project |
 | `url` | ✅ | Live deployment URL |
+| `subdomain` | ❌ | Display label for the subdomain column; falls back to extracting from `url` |
 | `description` | ✅ | One-liner, keep it tight |
 | `category` | ✅ | Drives the filter buttons |
 | `deployed_on` | ✅ | Platform — Cloudflare Pages, GitHub Pages, etc. |
