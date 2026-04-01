@@ -23,121 +23,121 @@ updates:
           - "patch"
 
   # Python
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "22:00"
-      timezone: "Asia/Kolkata"
-    open-pull-requests-limit: 15
-    assignees:
-      - "3rr0r-505"
-    labels:
-      - "dependabot"
-    commit-message:
-      prefix: "chore"
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "friday"
+  #     time: "22:00"
+  #     timezone: "Asia/Kolkata"
+  #   open-pull-requests-limit: 15
+  #   assignees:
+  #     - "3rr0r-505"
+  #   labels:
+  #     - "dependabot"
+  #   commit-message:
+  #     prefix: "chore"
+  #   groups:
+  #     minor-and-patch:
+  #       update-types:
+  #         - "minor"
+  #         - "patch"
+  #   ignore:
+  #     - dependency-name: "*"
+  #       update-types: ["version-update:semver-major"]
 
   # JavaScript / Node
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "22:00"
-      timezone: "Asia/Kolkata"
-    open-pull-requests-limit: 15
-    assignees:
-      - "3rr0r-505"
-    labels:
-      - "dependabot"
-    commit-message:
-      prefix: "chore"
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "friday"
+  #     time: "22:00"
+  #     timezone: "Asia/Kolkata"
+  #   open-pull-requests-limit: 15
+  #   assignees:
+  #     - "3rr0r-505"
+  #   labels:
+  #     - "dependabot"
+  #   commit-message:
+  #     prefix: "chore"
+  #   groups:
+  #     minor-and-patch:
+  #       update-types:
+  #         - "minor"
+  #         - "patch"
+  #   ignore:
+  #     - dependency-name: "*"
+  #       update-types: ["version-update:semver-major"]
 
   # Go
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "22:00"
-      timezone: "Asia/Kolkata"
-    open-pull-requests-limit: 15
-    assignees:
-      - "3rr0r-505"
-    labels:
-      - "dependabot"
-    commit-message:
-      prefix: "chore"
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+  # - package-ecosystem: "gomod"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "friday"
+  #     time: "22:00"
+  #     timezone: "Asia/Kolkata"
+  #   open-pull-requests-limit: 15
+  #   assignees:
+  #     - "3rr0r-505"
+  #   labels:
+  #     - "dependabot"
+  #   commit-message:
+  #     prefix: "chore"
+  #   groups:
+  #     minor-and-patch:
+  #       update-types:
+  #         - "minor"
+  #         - "patch"
+  #   ignore:
+  #     - dependency-name: "*"
+  #       update-types: ["version-update:semver-major"]
 
   # Rust
-  - package-ecosystem: "cargo"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "22:00"
-      timezone: "Asia/Kolkata"
-    open-pull-requests-limit: 15
-    assignees:
-      - "3rr0r-505"
-    labels:
-      - "dependabot"
-    commit-message:
-      prefix: "chore"
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+  # - package-ecosystem: "cargo"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "friday"
+  #     time: "22:00"
+  #     timezone: "Asia/Kolkata"
+  #   open-pull-requests-limit: 15
+  #   assignees:
+  #     - "3rr0r-505"
+  #   labels:
+  #     - "dependabot"
+  #   commit-message:
+  #     prefix: "chore"
+  #   groups:
+  #     minor-and-patch:
+  #       update-types:
+  #         - "minor"
+  #         - "patch"
+  #   ignore:
+  #     - dependency-name: "*"
+  #       update-types: ["version-update:semver-major"]
 
   # Docker
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "22:00"
-      timezone: "Asia/Kolkata"
-    open-pull-requests-limit: 15
-    assignees:
-      - "3rr0r-505"
-    labels:
-      - "dependabot"
-    commit-message:
-      prefix: "chore"
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+  # - package-ecosystem: "docker"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "friday"
+  #     time: "22:00"
+  #     timezone: "Asia/Kolkata"
+  #   open-pull-requests-limit: 15
+  #   assignees:
+  #     - "3rr0r-505"
+  #   labels:
+  #     - "dependabot"
+  #   commit-message:
+  #     prefix: "chore"
+  #   groups:
+  #     minor-and-patch:
+  #       update-types:
+  #         - "minor"
+  #         - "patch"
+  #   ignore:
+  #     - dependency-name: "*"
+  #       update-types: ["version-update:semver-major"]
